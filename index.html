@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8">
-
+	<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
 	<!--Css-->
-	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+	<link rel="stylesheet" href="css/lightslider.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	
 	<!--JS-->
-
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/lightslider.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
-	<title>Ender İMEN | Portfolio</title>
+	<title>Ender İMEN | Kişisel Web Sitesi</title>
 </head>
 <body>
-	<!-- Static navbar -->
-	<nav class="navbar">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar">---</span>
-					<span class="icon-bar">---</span>
-					<span class="icon-bar">---</span>
-				</button>
-				<a class="navbar-brand color" href="#">Ender İMEN</a>
+	
+	<section id="home">
+		<!-- Static navbar -->		
+		<nav class="navbar navbar-fixed-top">
+
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar">---</span>
+						<span class="icon-bar">---</span>
+						<span class="icon-bar">---</span>
+					</button>
+					<a class="navbar-brand color" href="#home"><img src="images/logo.png" alt="Logo"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#home">Anasayfa</a></li>
+						<li><a href="#about">Hakkımda</a></li>
+						<li><a href="#work">Çalışmalarım</a></li>
+						<li><a href="#footer">İletişim</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
 			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Anasayfa</a></li>
-					<li><a href="#">Hakkımda</a></li>
-					<li><a href="#">Çalışmalarım</a></li>
-					<li><a href="#">İletişim</a></li>
-				</ul>
-			</div><!--/.nav-collapse -->
-			
+		</nav>
+
+		<div class="container">
 			<div class="cover col-ls-12">
 				<h1 class="cover-heading text-center">ENDER İMEN</h1>
-				<p class="lead">SOFTWARE ENGINEER / FRONTEND DEVELOPER</p>
+				<p class="lead">YAZILIM MÜHENDİSİ / ARAYÜZ GELİŞTİRİCİSİ</p>
 				<p class="lead">Takip Et</p>
 
 				<div class="social">
 					<a href="https://www.facebook.com/enderimen" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a href="https://www.twitter.com/imenender" target="_blank"><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-linkedin"></i></a>
-					<a href=""><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/enderimen/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/enderimen"><i class="fa fa-github"></i></a>
 					<a href=""><i class="fa fa-codepen"></i></a>
 					<a href=""><i class="fa fa-dribbble"></i></a>
 				</div>
 				<p class="lead top">
-					<a href="#" class="btn btn-lg btn-default">Daha Fazla</a>
+					<a href="#about" class="btn btn-lg btn-default">Daha Fazla</a>
 				</p>
-			</div>
+			</div>	
 		</div><!--/.container-->
-	</nav>
-	
+	</section>
+
 	<section id="about" class="no-space col-md-12">
 		<div class="container flex-row">
 			<div class="profile-image col-md-4 col-sm-6 col-xs-12">
@@ -70,5 +76,83 @@
 			</div>
 		</div>
 	</section>
+
+	<section id="work">
+		<div class="container">
+			
+		</div>
+	</section>
+
+	<section id="footer" class="col-md-12">
+		<div class="left" class="col-md-6 col-sm-12">
+			<form action="">
+				<div class="form-group">
+					<label>Ad</label>
+					<input type="text" class="form-control" placeholder="Adınız" name="ad">
+				</div>	
+				<div class="form-group">
+					<label>Soyad</label>
+					<input type="text" class="form-control" placeholder="Soyadınız" name="soyad">
+				</div>
+				<div class="form-group">
+					<label>E-posta</label>
+					<input type="email" class="form-control" placeholder="e-mail" name="mail">
+				</div>
+				<div class="form-group">
+					<p><b>Mesaj</b></p>
+					<textarea name="" id="" cols="55" rows="5" placeholder="Mesaj yaz"></textarea>
+				</div>			
+				<button type="submit" class="btn btn-default button col-md-4 pull-right">Gönder</button>
+			</form>
+		</div>
+		<div class="right" class="col-md-6 col-sm-12">
+			<div class="footer-social">
+				<div class="icon">
+					<a href="https://www.facebook.com/enderimen" target="_blank">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<span>Facebook</span>
+				</div>
+
+				<div class="icon">
+					<a href="https://www.twitter.com/imenender" target="_blank">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<span>Twitter</span>
+				</div>
+
+				<div class="icon">
+					<a href="https://www.linkedin.com/in/enderimen" target="_blank">
+						<i class="fa fa-linkedin"></i>
+					</a>
+					<span>Linkedin</span>
+				</div>
+
+				<div class="icon">
+					<a href="https://www.github.com/enderimen" target="_blank">
+						<i class="fa fa-github"></i>
+					</a>
+					<span>Github</span>
+				</div>
+
+				<div class="icon">
+					<a href="https://www.dribbble.com/enderimen" target="_blank">
+						<i class="fa fa-dribbble"></i>
+					</a>
+					<span>Dribbble</span>
+				</div>
+
+				<div class="icon">
+					<a href="https://www.Behance.com/enderimen" target="_blank">
+						<i class="fa fa-behance"></i>
+					</a>
+					<span>Behance</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- scripts -->
+	<script src="js/scroll.js"></script>
 </body>
 </html> 
